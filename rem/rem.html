@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rem.css">
+</head>
+
+<body>
+    <div class="div_div">
+        <div class="div_div1">
+            <div class="div_div1_1">
+                <span class="div_div1_1a">
+                    北京
+                </span>
+                <span class="div_div1_1b">
+                    <img src="imgs/logo.png" class="img1" />
+                </span>
+                <span class="div_div1_1c">
+                    签到
+                </span>
+            </div>
+            <div class="div_div1_21">
+                <div class="div_div1_2">
+                    <div>
+                        <img src="imgs/icon-top-001.png" class="img1_1" />
+                        <div class="div_div1_3a">我要贷款</div>
+                    </div>
+                    <div>
+                        <img src="imgs/icon-top-002.png" class="img1_1" />
+                        <div class="div_div1_3a">办信用卡</div>
+                    </div>
+                    <div>
+                        <img src="imgs/icon-top-003.png" class="img1_2" />
+                        <div class="div_div1_3a">查询信用</div>
+                    </div>
+                </div>
+            </div>
+            <div class="div_div1_4">
+                <div class="div_div1_41">
+                    <div class="div_div1_41a">
+                        最高申请额度(元)
+                    </div>
+                    <div class="div_div1_41b">
+                        <div class="div_div1_41b1">
+                            1000~50万
+                        </div>
+                        <div class="div_div1_41b2">
+                            预估额度
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="div_div2">
+            <div class="div_div2_1">
+                帮你拿钱
+            </div>
+            <div class="div_div2_2">
+                <div class="div_div2_2a">
+                    <p>一键选贷款</p>
+                    <p>订制私人贷款</p>
+                </div>
+                <div class="div_div2_2b">
+                    <p>信用卡贷款</p>
+                    <p>额度高批款快</p>
+                </div>
+                <div class="div_div2_2c">
+                    <p>小额贷款</p>
+                    <p>24小时内放款</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="div_div3">
+            <div class="div_div3_1">
+                活动发现
+            </div>
+            <div class="div_div3_2">
+                <img src="imgs/img-ad.png" class="img3" />
+            </div>
+        </div>
+
+        <div class="div_div4">
+            <div class="div_div4_1">
+                <div class="div_div_4aa">
+                    <img src="imgs/a.png" class="img41" />
+                    <div class="div_div4_1a">首页</div>
+                </div>
+                <div class="div_div_4bb">
+                    <img src="imgs/b.png" class="img41" />
+                    <div class="div_div4_1a">质询</div>
+                </div>
+                <div class="div_div_4bb">
+                    <img src="imgs/c.png" class="img41" />
+                    <div class="div_div4_1a">论坛</div>
+                </div>
+                <div class="div_div_4bb">
+                    <img src="imgs/d.png" class="img42" />
+                    <div class="div_div4_1a">账户</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    window.onload = function () {
+        getRem(720, 100)
+    };
+    window.onresize = function () {
+        getRem(720, 100)
+    };
+    function getRem(pwidth, prem) {
+        var html = document.getElementsByTagName("html")[0];
+        var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+        html.style.fontSize = oWidth / pwidth * prem + "px";
+    }
+</script>
+
+</html>

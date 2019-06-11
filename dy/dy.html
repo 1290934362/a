@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="a.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="div_1">
+        <video autoplay muted loop class="aa" id="voo">
+            <source src="a.img/tvc-v2_30097df.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="div_2">
+        <div>
+            <div class="col-md-4">
+                <img src="a.img/logo.png" class="img_a" />
+            </div>
+
+            <div class="col-md-7">
+                <ul>
+                    <li>
+                        开放平台
+                    </li>
+                    <li>
+                        视频上传
+                    </li>
+                    <li>
+                        抖音特效师
+                    </li>
+
+                    <li>
+                        抖音音乐人
+                    </li>
+
+                    <li>
+
+                        机构认证
+                    </li>
+
+                    <li>
+                        企业认证
+                    </li>
+                    <li>
+                        <img src="a.img/jy.png" />
+                    </li>
+                </ul>
+            </div>
+
+            <div class="main_body">
+                <img src="a.img/good_sh.png" class="img_a1">
+            </div>
+
+            <div class="main_phone">
+                <div class="iphone">
+                    <img src="a.img/iphone.png" class="img_c">
+                </div>
+
+                <div class="android">
+                    <img src="a.img/android.png" class="img_c">
+                </div>
+
+                <div class="er_ma">
+                    <img src="a.img/ewm1.png" class="img_d">
+                    <img src="a.img/ewm.png" class="img_e">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="foot">
+        <nav class="a_a"><span>|</span> <a>音乐</a>
+            <span>|</span><a>用户服务协议</a>
+            <span>|</span> <a>隐私政策</a>
+            <span>|</span> <a>账号找回</a> <span>|</span> <a>联系我们</a>
+            <span>|</span> <a>广告投放</a> <span>|</span></nav>
+        <div>
+            <p></p>
+            <p><span id="copyYear">2019</span>&nbsp;©&nbsp;抖音&nbsp;&nbsp;|&nbsp;京ICP备16016397号-3&nbsp;|&nbsp;北京微播视界科技有限公司
+                |&nbsp; 京B2-20170846</p>
+            <p><a class="a_a">中国互联网举报中心</a>&nbsp;|&nbsp;网络文化许可证-京网文-（2016）2282-264号&nbsp;|&nbsp;违法和不良信息举报：010-83434212&nbsp;|&nbsp;举报邮箱：jubao@douyin.com
+            </p>
+            <div class="gongan-box">
+                <img src="video/hz.png">
+                <a class="a_a">京公网安备
+                    11010802023605号</a> <span>&nbsp; | &nbsp;地址&nbsp;:&nbsp;北京市海淀区知春路51号4层408&nbsp;</span></div>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+    $(".ewm1").mouseover(function () {
+        $(".android").hide();
+        $(".iphone").hide();
+        $(".ewm1").hide();
+        $(".ewm_hidden").slideDown();
+    });
+
+    $(".ewm_hidden").mouseout(function () {
+        $(".android").show();
+        $(".iphone").show();
+        $(".ewm1").show();
+        $(".ewm_hidden").slideUp();
+    })
+
+    var ii = document.getElementById("voo");
+
+    $(".close_sy").click(function () {
+        $(this).hide();
+        ii.muted = false;
+    });
+</script>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="My.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="main_head">
+            <div class="head">
+                <span style="padding-top:1rem;">可用余额(元)</span>
+            </div>
+
+            <div class="money">
+                <span style="float:left;padding-left: 0.3rem;">
+                    代收金额(元)
+                </span>
+
+                <span class="s_t">
+                    |
+                </span>
+                <span style="float:right;padding-right: 0.3rem;">
+                    累计收益(元)
+                </span>
+            </div>
+
+            <div class="money_jy">
+                <div class="jy_1">
+                    <img src="Myimg/mx2.png">
+                    <span>充值</span>
+                </div>
+                <div class="jy_2">
+                    <img src="Myimg/mx2.png">
+                    <span>提现</span>
+                </div>
+            </div>
+
+            <div class="main_body">
+                <div class="mb1">
+                    <img src="Myimg/mx2.png">
+                    <span style="font-size:0.35rem;">投资记录</span>
+                </div>
+                <div class="mb2">
+                    <img src="Myimg/mx2.png">
+                    <span style="font-size:0.35rem;">投资记录</span>
+                </div>
+                <div class="mb3">
+                    <img src="Myimg/mx2.png">
+                    <span style="font-size:0.35rem;">资金明细</span>
+                </div>
+                <div class="mb4">
+                    <img src="Myimg/mx2.png">
+                    <span style="font-size:0.35rem;">奖励优惠</span>
+                </div>
+                <div class="mb5" style="border-bottom:none;">
+                    <img src="Myimg/mx2.png">
+                    <span style="font-size:0.35rem;">专属优惠</span>
+                </div>
+            </div>
+
+            <div class="div_div7">
+                <div class="div_div7_1">
+                    <img src="imgs/home_pressed.png" class="img7_1" />
+                    <div class="span_span7_1">首页</div>
+                </div>
+                <div class="div_div7_1">
+                    <a href="licai.html">
+                        <img src="imgs/invest.png" class="img7_1" />
+                        <div class="span_span7_4">理财</div>
+                    </a>
+                </div>
+                <div class="div_div7_1">
+                    <img src="imgs/activity.png" class="img7_1" />
+                    <div class="span_span7_3">商城</div>
+                </div>
+                <div class="div_div7_1">
+                    <a href="logn.html"><img src="imgs/my.png" class="img7_2" /></a>
+                    <div class="span_span7_2"><a href="logn.html">我的</a></div>
+                </div>
+            </div>
+        </div>
+</body>
+<script>
+    window.onload = function () {
+        getRem(720, 100)
+    };
+    window.onresize = function () {
+        getRem(720, 100)
+    };
+    function getRem(pwidth, prem) {
+        var html = document.getElementsByTagName("html")[0];
+        var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+        html.style.fontSize = oWidth / pwidth * prem + "px";
+    }
+</script>
+
+</html>

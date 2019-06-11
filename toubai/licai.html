@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="licai.css">
+</head>
+
+<body>
+    <div class="div_div">
+        <div class="div_div1">
+            <ul class="ul">
+                <li class="li_1">新手专区</li>
+                <li class="li_1">智能专区</li>
+                <li class="li_1">定投专区</li>
+                <li class="li_1">转让专区</li>
+            </ul>
+        </div>
+
+
+        <div class="div_div7">
+            <div class="div_div7_1">
+                <a href="toubaishenghuo.html">
+                    <img src="licaiimg/home.png" class="img7_1" />
+                    <div class="span_span7_1">首页</div>
+                </a>
+            </div>
+            <div class="div_div7_1">
+                <a href="licai.html">
+                    <img src="licaiimg/invest_pressed.png" class="img7_1" />
+                    <div class="span_span7_1_1">理财</div>
+                </a>
+            </div>
+            <div class="div_div7_1">
+                <img src="imgs/activity.png" class="img7_1" />
+                <div class="span_span7_1">商城</div>
+            </div>
+            <div class="div_div7_1">
+                <a href="logn.html"><img src="imgs/my.png" class="img7_2" /></a>
+                <div class="span_span7_2"><a href="logn.html">我的</a></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    window.onload = function () {
+        getRem(720, 100)
+    };
+    window.onresize = function () {
+        getRem(720, 100)
+    };
+    function getRem(pwidth, prem) {
+        var html = document.getElementsByTagName("html")[0];
+        var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+        html.style.fontSize = oWidth / pwidth * prem + "px";
+    }
+</script>
+
+</html>

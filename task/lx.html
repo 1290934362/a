@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="clickCounter()" type="button">点我！</button>
+    <div id="result"></div>
+</body>
+<script>
+    // if (typeof (Storage) !== undefined) {
+    //     localStorage.sitename = "aaa";
+    //     document.getElementById("result").innerHTML = "www.baidu.com" + localStorage.sitename;
+    // }
+    // else {
+    //     document.getElementById("result").innerHTML = "不支持";
+    // };
+
+    function clickCounter() {
+        if (typeof (Storage) !== "undefined") {
+            if (sessionStorage.clickcount) {
+                sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+            }
+            else {
+                sessionStorage.clickcount = 1;
+            }
+            document.getElementById("result").innerHTML = "点击了该按钮 " + sessionStorage.clickcount + " 次 ";
+        }
+        else {
+            document.getElementById("result").innerHTML = "不支持";
+        }
+    }
+</script>
+
+</html>

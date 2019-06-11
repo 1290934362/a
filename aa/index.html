@@ -1,0 +1,151 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/??sm.min.css,sm-extend.min.css">
+    <script>
+        window.onload = function () {
+            /*720代表设计师给的设计稿的宽度，你的设计稿是多少，就写多少;100代表换算比例，这里写100是
+              为了以后好算,比如，你测量的一个宽度是100px,就可以写为1rem,以及1px=0.01rem等等*/
+            getRem(720, 100)
+        };
+        window.onresize = function () {
+            getRem(720, 100)
+        };
+        function getRem(pwidth, prem) {
+            var html = document.getElementsByTagName("html")[0];
+            var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+            html.style.fontSize = oWidth / pwidth * prem + "px";
+        }
+    </script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="mui.min.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="mui.min.css">
+    <style type="text/css">
+        body {
+            width: 100%;
+            overflow: auto;
+        }
+
+        div {
+            width: 100%;
+            background-color: #E6E6FA;
+            border: 1px solid orangered !important;
+        }
+
+        ul {
+            width: 100%;
+        }
+
+        li {
+            text-align: center;
+            display: inline-block;
+            margin-right: 0.99rem;
+            width: 1.35rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .ch_name {
+            border: 1px solid black;
+        }
+
+        a {
+            text-decoration: none;
+            color: red;
+        }
+
+        div {
+            width: 100%;
+            background-color: #FFF;
+            border: 1px solid blue !important;
+        }
+    </style>
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <div id="pullrefresh" class="content">
+        <div class="card-container">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-content-inner">
+                        下拉加载
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="scroll">
+        <h1 style="text-align: center;margin-bottom: 0.5rem;">列表页</h1>
+
+        <ul class="tt"></ul>
+    </div>
+    </div>
+    <script>
+        $.init();
+    </script> 
+    <script>
+        $.ajax({
+            type: "get",
+            url: "1.json",
+            dataType: "json",
+            success: function (data) {
+                for (j = 0; j < data.result.length; j++) {
+                    for (i = 0; i < data.result[j].channellist.length; i++) {
+                        $('ul').append('<li  style="color:red">'
+                            + '<a href="info.html?ch_name=' + data.result[j].channellist[i].ch_name + '">' + data.result[j].channellist[i].name
+                            + "</a>"
+                            + '</li>'
+                            + '<li>' + data.result[j].channellist[i].cate_name + '</li>'
+                            + '<li>' + data.result[j].channellist[i].cate_sname + '</li>'
+                            + '<br/>'
+                        )
+
+
+                    }
+                }
+
+                $(document).on('refresh', '.pull-to-refresh-content', function (e) {
+                    // 模拟2s的加载过程
+                    setTimeout(function () {
+                        var cardNumber = $(e.target).find('.card').length + 1;
+                        var cardHTML = '<div class="card">' +
+                            '<div class="card-header">card' + cardNumber + '</div>' +
+                            '<div class="card-content">' +
+                            '<div class="card-content-inner">' +
+                            '这里是第' + cardNumber + '个card，下拉刷新会出现第' + (cardNumber + 1) + '个card。' +
+                            '</div>' +
+                            '</div>' +
+                            '</div>';
+
+                        $(e.target).find('.card-container').prepend(cardHTML);
+                        // 加载完毕需要重置
+                        $.pullToRefreshDone('.pull-to-refresh-content');
+                    }, 2000);
+                });
+
+                $(".to_ifo").on('click', function () {
+                    var t1 = $(this).next().html()
+                    console.log(t1)
+                    location.href = 'info.html?ch_name=' + t1
+                })
+
+            }
+        });
+
+
+
+    </script>
+    <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+
+
+</body>
+
+</html>

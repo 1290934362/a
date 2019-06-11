@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../dist/css/swiper.min.css">
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+    </style>
+    <link rel="stylesheet" href="moon.css">
+    <link rel="stylesheet" href="swiper.min.css">
+</head>
+
+<body>
+    <div>
+        <div class="div_div1">
+            <div class="col-md-9 div_div1_1">
+                <span class="div_div1_1a">LOG &nbsp; IN</span> &nbsp; | &nbsp;
+                <span class="div_div1_1b">REGISTER</span>
+            </div>
+            <div class="col-md-3 div_div1_2">
+                <span class="div_div1_2a">ENG</span>
+                <span class="caret"></span>&nbsp;&nbsp;&nbsp;
+                <span class="div_div1_2b">USD</span>
+                <span class="caret"></span>
+            </div>
+        </div>
+
+        <div class="div_div2">
+            <div class="div_div2_1 col-md-2">
+                <img src="imgs/logo.png" />
+            </div>
+            <div class="div_div2_2 col-md-7">
+                <ul>
+                    <li class="li1">
+                        <a href="#" class="a_hover1" id="a_hover1">HOME</a>
+                        <ul id="a_hover1_1">
+                            <li>HOME 1</li>
+                            <li>HOME 2</li>
+                            <li>HOME 3</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="SHOP.html" class="a_hover2" id="a_hover2">SHOP</a>
+                        <ul id="a_hover1_2">
+                            <div class="ul_div_li">
+                                <li>SHOP 1</li>
+                                <li>SHOP 2</li>
+                                <li>SHOP 3</li>
+                            </div>
+
+                            <div class="ul_div_li_1">
+                                <li>SHOP 1</li>
+                                <li>SHOP 2</li>
+                                <li>SHOP 3</li>
+                            </div>
+                            <div class="ul_div_li_2">
+                                <li>SHOP 1</li>
+                                <li>SHOP 2</li>
+                                <li>SHOP 3</li>
+                            </div>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="a_hover3" id="a_hover3">PAGES</a>
+                        <ul id="a_hover1_3">
+                            <li>SHOP 1</li>
+                            <li>SHOP 2</li>
+                            <li>SHOP 3</li>
+                        </ul>
+                    </li>
+                    <li>BLOG</li>
+                    <li>CONTACT</li>
+                </ul>
+            </div>
+            <div>
+                <div class="col-md-1">
+                    <img src="imgs/c69ba37ecfee2a002639b0f7dcf8c49.png" class="img2_1" />
+                </div>
+                <div class="col-md-2">
+                    <img src="imgs/1053873e5f5fa1ed9511c9e10e52e35.png" class="img2_1" />
+                </div>
+            </div>
+        </div>
+
+        <div class="div_div3">
+            <div class="div_div3_1">
+                <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide-active"><img src="imgs/bg-1.jpg" class=" div_div3_a" />
+                        </div>
+                        <div class="swiper-slide swiper-slide-next"><img src="imgs/bg-2.jpg" class=" div_div3_a" />
+                        </div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"
+                        aria-disabled="false"></div>
+                    <div class="swiper-button-prev swiper-button-disabled" tabindex="0" role="button"
+                        aria-label="Previous slide" aria-disabled="true"></div>
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="div_div4">
+            <div class="div_div4_1">
+                <img src="imgs/b9411df1a2092c28baeaf7d7d9ab7fc.png" class="col-md-6 img_2_1" />
+                <img src="imgs/a10676efaaa94bd6fccc6464effb692.png" class="col-md-6 img_2_2" />
+            </div>
+        </div>
+
+        <div class="div_div5">
+            <div class="div_div5_1">
+                New Arrival
+            </div>
+            <div class="div_div5_2">
+                -----
+            </div>
+            <div class="div_div5_3">
+                Best Seller
+            </div>
+            <div class="div_div5_2">
+                -----
+            </div>
+            <div class="div_div5_3">
+                Most Wanted
+            </div>
+        </div>
+
+        <div class="div_div6">
+            <div class="div_div6_1 col-md-3">
+                <img src="imgs/1.jpg" />
+                <div class="div_div6_1_1" id="div_div6_1_1">
+                    <div class="div_div6_1_1a">Stripped Wool</div>
+                    <div class="div_div6_1_1b">$ 46</div>
+                    <div class="div_div6_1_1c">Mens wear</div>
+                </div>
+                <div class="div_div8a_1aa" id="div_div8a_1aa">
+                    <div class="div_div6_1a">
+                        <span>Sizes:</span>
+                        <span>S</span>
+                        <span>XS</span>
+                        <span>M</span>
+                        <span>L</span>
+                        <span>XL</span>
+                        <span>XXL</span>
+                    </div>
+                    <div class="div_div82_1cc">
+                        coloers
+                    </div>
+                </div>
+            </div>
+            <div class="div_div6_1 col-md-3">
+                <img src="imgs/2.jpg" class="img6_6" />
+                <div class="div_div6_1_1">
+                    <div class="div_div6_1_1a">Stripped Wool</div>
+                    <div class="div_div6_1_1b">$ 46</div>
+                    <div class="div_div6_1_1c">Mens wear</div>
+                </div>
+            </div>
+            <div class="div_div6_1 col-md-3">
+                <img src="imgs/3 (1).jpg" />
+                <div class="div_div6_1_1">
+                    <div class="div_div6_1_1a">Stripped Wool</div>
+                    <div class="div_div6_1_1b">$ 46</div>
+                    <div class="div_div6_1_1c">Mens wear</div>
+                </div>
+            </div>
+            <div class="div_div6_1 col-md-3">
+                <img src="imgs/1.jpg" />
+                <div class="div_div6_1_1">
+                    <div class="div_div6_1_1a">Stripped Wool</div>
+                    <div class="div_div6_1_1b">$ 46</div>
+                    <div class="div_div6_1_1c">Mens wear</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="div_div7">
+            <div class="div_div7_1">
+                <img src="imgs/1 (1).jpg" class="img_71 col-md-4" />
+            </div>
+            <div class="div_div7_2">
+                <img src="imgs/c.PNG" class="img_72 col-md-4" />
+            </div>
+            <div class="div_div7_3">
+                <img src="imgs/a.PNG" class="img_73 col-md-4" />
+            </div>
+            <div class="div_div7_4">
+                <img src="imgs/b.PNG" class="img_74 col-md-8" />
+            </div>
+        </div>
+
+        <div class="div_div9">
+            <div class="col-md-6 div_div_9_1">
+                <div class="div_div9_11">
+                    <div class="div_div9_11a">
+                        SPECIAL COLLECTION
+                    </div>
+                    <div class="div_div9_11b">
+                        For this
+                    </div>
+                    <div class="div_div9_11c">
+                        Christmas
+                    </div>
+                    <div class="div_div9_11d">
+                        SEE COLLECTIONS
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 div_div_9_1">
+                <img src="imgs/2 (1).jpg" class="col-md-12 div_div9_2" />
+                <div class="div_div9_21">
+                    <div class="div_div9_21a">
+                        COMING THIS
+                    </div>
+                    <div class="div_div9_21b">
+                        WINTER
+                    </div>
+                    <div class="div_div9_21c">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        doloremque laudantium,
+                    </div>
+                    <div class="div_div9_21d">
+                        DISCOVER
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="div_div10">
+            <div class="div_div101">
+                Top Rated Product
+            </div>
+            <div class="col-md-3 div_div102">
+                <img src="imgs/5.jpg" />
+                <div class="div_div101_1" id="div_div101_1">
+                    <div class="div_div101_1a">Stripped Wool</div>
+                    <div class="div_div101_1b">$ 46</div>
+                    <div class="div_div101_1c">Mens wear</div>
+                </div>
+                <div class="div_div10a_1aa" id="div_div10a_1aa">
+                    <div class="div_div10_1a">
+                        <span>Sizes:</span>
+                        <span>S</span>
+                        <span>XS</span>
+                        <span>M</span>
+                        <span>L</span>
+                        <span>XL</span>
+                        <span>XXL</span>
+                    </div>
+                    <div class="div_div102_1cc">
+                        coloers
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 div_div103">
+                <img src="imgs/6.jpg" />
+                <div class="div_div101_1" id="div_div101_1">
+                    <div class="div_div101_1a">Stripped Wool</div>
+                    <div class="div_div101_1b">$ 46</div>
+                    <div class="div_div101_1c">Mens wear</div>
+                </div>
+            </div>
+            <div class="col-md-3 div_div104">
+                <img src="imgs/7.jpg" />
+                <div class="div_div101_1" id="div_div101_1">
+                    <div class="div_div101_1a">Stripped Wool</div>
+                    <div class="div_div101_1b">$ 46</div>
+                    <div class="div_div101_1c">Mens wear</div>
+                </div>
+            </div>
+            <div class="col-md-3 div_div105">
+                <img src="imgs/8.jpg" />
+                <div class="div_div101_1" id="div_div101_1">
+                    <div class="div_div101_1a">Stripped Wool</div>
+                    <div class="div_div101_1b">$ 46</div>
+                    <div class="div_div101_1c">Mens wear</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="div_div11">
+            <div class="div_div11_1">
+                <img src="imgs/196b89479365257585899acbe7ef55f.png" class="img_111 " />
+            </div>
+        </div>
+
+        <div class="div_div12">
+            <div class="col-md-12 div_div12_1">
+                From The Blog
+            </div>
+            <img src="imgs/1 (4).jpg" class="col-md-3 img_121" />
+            <div class="col-md-3 div_div12_2">
+                <div class="div_div12_2a">
+                    December 26, 2015
+                </div>
+                <div class="div_div12_2b">
+                    Milan Fashion Week 2015
+                </div>
+                <div class="div_div12_2c">
+                    Lorem ipsum dolor sit amet, consec adipisicing elit, sed do eiusmod empor incididunt oloremque
+                    laudantium, Eos qui ratione voluptatem sequi. Neque porro quisquam est, et dolore.
+                </div>
+                <div class="div_div12_2aa">
+                    <span class="div_div12_2e">By</span> <span class="div_div12_2f">Kevin Smith</span>
+                </div>
+            </div>
+            <img src="imgs/2.jpg" class="col-md-3 img_122" />
+            <div class="col-md-3 div_div12_2">
+                <div class="div_div12_2a">
+                    December 15, 2015
+                </div>
+                <div class="div_div12_2b">
+                    BeSpoked, BeBold, BeWitched
+                </div>
+                <div class="div_div12_2c">
+                    Lorem ipsum dolor sit amet, consec adipisicing elit, sed do eiusmod empor incididunt oloremque
+                    laudantium, Eos qui ratione voluptatem sequi. Neque porro quisquam est, et dolore.
+                </div>
+                <div class="div_div12_2d">
+                    <span class="div_div12_2e">By</span> <span class="div_div12_2f">Kevin Smith</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="div_div13">
+            <div class="div_div13_1">
+                <img src="imgs/subscribe-bg.jpg" class="img_13" />
+            </div>
+            <div class="div_div13_2">
+                <div class="div_div13_2a">
+                    GET NOTIFIED OF ANY OFFERS!
+                </div>
+                <div class="div_div13_2b">
+                    Subscribe to our Newsletter to be notified about promotions
+                </div>
+                <div class="div_div13_2c">
+                    <input type="text" placeholder="Your email address" class="div_div13_2d" />
+                    <input type="button" value="SUBMIT" class="div_div13_2e" />
+                </div>
+            </div>
+        </div>
+
+        <div class="div_div14">
+            <div class="col-md-2 div_div14_1">
+                Top Brands
+            </div>
+            <div class="col-md-10 div_div14_2">
+                <img src="imgs/60974d6721935ab09578eb84d1f42d2.png" class="img_141" />
+                <img src="imgs/1.png" class="img142" />
+                <img src="imgs/2.png" class="img142" />
+                <img src="imgs/1.png" class="img142" />
+                <img src="imgs/2.png" class="img142" />
+                <img src="imgs/11a549cfaf8bdfd2e4b456361250ef2.png" class="img_141" />
+            </div>
+        </div>
+
+        <div class="div_div15">
+            <div class="col-md-3 div_div15_1">
+                <div>
+                    <img src="imgs/footer-logo.png" class="img_151" />
+                </div>
+                <div class="div_div15_1">
+                    Lorem ipsum dolor sit amet, consec adipisicing elit, sed do eiusmod empor incididunt oloremque
+                    laudantium,
+                </div>
+            </div>
+            <div class="col-md-3 div_div15_2">
+                <div class="div_div15_a">
+                    ADDRESS
+                </div>
+                <div class="div_div15_3">
+                    1025-1035 Park Ave,
+                </div>
+                <div class="div_div15_3">
+                    New York,
+                </div>
+                <div class="div_div15_3">
+                    NY 10028, USA
+                </div>
+                <div class="div_div15_3">
+                    +1 123-456-7890
+                </div>
+                <div class="div_div15_3">
+                    sales@koolinc.com
+                </div>
+            </div>
+            <div class="col-md-3 div_div15_2">
+                <div class="div_div15_a">
+                    COLLECTION
+                </div>
+                <div class="div_div15_3">
+                    Men
+                </div>
+                <div class="div_div15_3">
+                    Women
+                </div>
+                <div class="div_div15_3">
+                    Kids
+                </div>
+                <div class="div_div15_3">
+                    Accessories
+                </div>
+                <div class="div_div15_3">
+                    Sale
+                </div>
+            </div>
+            <div class="col-md-3 div_div15_2">
+                <div class="div_div15_a">
+                    Coming Soon
+                </div>
+                <div class="div_div15_3">
+                    SHOP
+                </div>
+                <div class="div_div15_3">
+                    About Us
+                </div>
+                <div class="div_div15_3">
+                    Shipping Methods
+                </div>
+                <div class="div_div15_3">
+                    Career
+                </div>
+                <div class="div_div15_3">
+                    Contact
+                </div>
+            </div>
+        </div>
+
+        <div class="div_div16">
+            <div class="col-md-8 div_div16_1">
+                © 2016 <span class="div_div16_1a">wilylab.</span> All Rights Reserved
+            </div>
+            <div class="col-md-4 div_div16_2">
+                <img src="imgs/payment.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+
+<script src="https://cdn.bootcss.com/jquery/3.4.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#a_hover1").hover(function () {
+            $("#a_hover1_1").slideToggle("slow");
+        });
+    });
+
+    $(document).ready(function () {
+        $("#a_hover2").hover(function () {
+            $("#a_hover1_2").slideToggle("slow");
+        });
+    });
+
+    $(document).ready(function () {
+        $("#a_hover3").hover(function () {
+            $("#a_hover1_3").slideToggle("slow");
+        });
+    });
+    $(document).ready(function () {
+        $("#div_div6_1_1").hover(function () {
+            $("#div_div8a_1aa").slideToggle("slow");
+        });
+    });
+
+
+    $(document).ready(function () {
+        $("#div_div101_1").hover(function () {
+            $("#div_div10a_1aa").slideToggle("slow");
+        });
+    });
+</script>
+
+</html>

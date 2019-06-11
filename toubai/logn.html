@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="logn.css">
+</head>
+
+<body>
+    <div class="div_div">
+        <img src="loginimg/login_bg.png" class="img_img" />
+        <div class="div_div1">
+            <div class="div_div1_1">
+                <a href="toubaishenghuo.html"><img src="loginimg/login_back.png" class="img1_1" /></a>
+            </div>
+            <div class="div_div1_2">
+                <a href="register.html"><span class="span_span1_1">注册</span></a>
+            </div>
+        </div>
+        <div class="div_div2">
+            <div class="div_div2_1">
+                <input type="text" placeholder="用户名/手机号" class="input_1">
+            </div>
+            <div class="div_div2_2">
+                <input type="password" placeholder="密码" class="input_2">
+                <img src="loginimg/bkj.png" class="img2_1">
+            </div>
+            <div class="div_div2_3">
+                <span class="span_span2_1">登录</span>
+            </div>
+            <div class="div_div2_4">
+                <span class="span_span2_2">忘记密码?</span>
+            </div>
+            <div class="div_div2_5">
+                <img src="loginimg/loginwxa.png" class="img2_2"/>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    window.onload = function () {
+        getRem(720, 100)
+    };
+    window.onresize = function () {
+        getRem(720, 100)
+    };
+    function getRem(pwidth, prem) {
+        var html = document.getElementsByTagName("html")[0];
+        var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+        html.style.fontSize = oWidth / pwidth * prem + "px";
+    }
+</script>
+
+</html>

@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main_div {
+    width: 100%;
+    background: #ebebeb;
+}
+
+.tou_div {
+    text-align: center;
+    background: #3DB1FA;
+    margin: 0 auto;
+    height: 4rem;
+    margin-top: -0.3rem;
+}
+
+.sp_div {
+    position: fixed;
+    text-align: center;
+    font-size: 0.4rem;
+    color: white;
+    background: #3DB1FA;
+    width: 7.2rem;
+    z-index: 99;
+    height: 1rem;
+    line-height: 1rem;
+}
+
+.tou_div p {
+    font-size: 0.25rem;
+    color: white;
+    position: relative;
+    top: 1rem;
+}
+
+.tou1 {
+    float: left;
+    margin-left: 1rem;
+}
+
+.tou2 {
+    float: right;
+    margin-right: 1rem;
+}
+
+.sp {
+    position: relative;
+    font-size: 0.3rem;
+    color: white;
+}
+
+.qian_div {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    display: -webkit-inline-box;
+    background: white;
+    position: relative;
+    top: -0.9rem;
+}
+
+.jian1 {
+    width: 1.8rem;
+    font-size: 0.3rem;
+}
+
+.jian2 {
+    width: 1.8rem;
+    font-size: 0.3rem;
+}
+
+.jian3 {
+    width: 1.8rem;
+    font-size: 0.3rem;
+}
+
+i {
+    color: rgb(80, 80, 218);
+}
+
+ul li {
+    list-style: none;
+    display: flow-root;
+}
+
+.ul_div {
+    font-size: 0.3rem;
+    background: white;
+    position: relative;
+    top: -1.19rem;
+    left: -0.6rem;
+    width: 7.8rem;
+}
+.ul_div li {
+    height: 1rem;
+    border-bottom: 1px solid #000;
+    line-height: 1.5rem;
+    width: 6rem;
+}
+.ul_div span {
+    float: right;
+    color: #c5baba;
+}
+
+.ga_div {
+    font-size: 0.3rem;
+    position: relative;
+    top: -1.3rem;
+    background: white;
+    height: 1rem;
+    line-height: 1rem;
+}
+
+.zui_div {
+    position: relative;
+    top: -1.5rem;
+    left: 0.2rem;
+    width: 7rem;
+}
+
+.jie_div p {
+    font-size: 0.28rem;
+    position: relative;
+    top: -0.3rem
+}
+
+.jie_div span {
+    font-size: 0.35rem;
+}
+
+.img_div p {
+    font-size: 0.28rem;
+    position: relative;
+    top: -0.3rem
+}
+
+.img_div span {
+    font-size: 0.35rem;
+}
+
+.img_div img {
+    width: 6rem;
+}
+
+.img_div {
+    position: relative;
+    top: -0.8rem;
+}
+
+.huankuan_div {
+    font-size: 0.3rem;
+    position: relative;
+    left: 0.2rem;
+    width: 7rem;
+}
+
+.huankdxy_f {
+    font-size: 0.3rem;
+    text-align: center;
+    margin: 0 auto;
+    width: 6rem;
+    position: relative;
+    background: white;
+}
+
+.huankdxy_f table {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border: 1px solid #ebebeb;
+}
+
+.huankdxy_f table tbody {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.huankdxy_f th,
+td {
+    font-weight: 100;
+    color: #333;
+    font-size: 14px;
+    border: 1px solid #ebebeb;
+}
+
+.kkk {
+    background: white;
+    position: relative;
+    top: -2rem;
+}
+
+.but {
+    background: #3DB1FA;
+    text-align: center;
+    font-size: 0.5rem;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 7.2rem;
+}
+
+ul {
+    position: relative;
+    left: 0.5rem;
+    top: -0.2rem;
+}
